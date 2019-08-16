@@ -20,12 +20,12 @@ public class EnterpriseMessageFactory extends AbstractMessageFactory {
 
     @Override
     protected void initMessage() throws InstantiationException, IllegalAccessException {
-        register(new MessageKey(MessageType.link.name(), null, WechatAccountType.ENTERPRISE), EnterpriseLinkMessage.class);
-        register(new MessageKey(MessageType.text.name(), null, WechatAccountType.ENTERPRISE), EnterpriseTextMessage.class);
-        register(new MessageKey(MessageType.image.name(), null, WechatAccountType.ENTERPRISE), EnterpriseImageMessage.class);
-        register(new MessageKey(MessageType.location.name(), null, WechatAccountType.ENTERPRISE), EnterpriseLocationMessage.class);
-        register(new MessageKey(MessageType.video.name(), null, WechatAccountType.ENTERPRISE), EnterpriseVideoMessage.class);
-        register(new MessageKey(MessageType.voice.name(), null, WechatAccountType.ENTERPRISE), EnterpriseVoiceMessage.class);
+        register(new MessageKey(MessageType.link.name(), WechatAccountType.ENTERPRISE), EnterpriseLinkMessage.class);
+        register(new MessageKey(MessageType.text.name(), WechatAccountType.ENTERPRISE), EnterpriseTextMessage.class);
+        register(new MessageKey(MessageType.image.name(), WechatAccountType.ENTERPRISE), EnterpriseImageMessage.class);
+        register(new MessageKey(MessageType.location.name(), WechatAccountType.ENTERPRISE), EnterpriseLocationMessage.class);
+        register(new MessageKey(MessageType.video.name(), WechatAccountType.ENTERPRISE), EnterpriseVideoMessage.class);
+        register(new MessageKey(MessageType.voice.name(), WechatAccountType.ENTERPRISE), EnterpriseVoiceMessage.class);
         //event
         register(new MessageKey(MessageType.event.name(), EventMessageType.location.name(), WechatAccountType.ENTERPRISE), EnterpriseLocationEventMessage.class);
         register(new MessageKey(MessageType.event.name(), EventMessageType.enter_agent.name(), WechatAccountType.ENTERPRISE), EnterpriseEnterAgentEventMessage.class);
@@ -38,5 +38,6 @@ public class EnterpriseMessageFactory extends AbstractMessageFactory {
         register(new MessageKey(MessageType.event.name(), EventMessageType.pic_photo_or_album.name(), WechatAccountType.ENTERPRISE), EnterprisePicPhotoAlbumEventMessage.class);
         register(new MessageKey(MessageType.event.name(), EventMessageType.pic_weixin.name(), WechatAccountType.ENTERPRISE), EnterprisePicWeixinEventMessage.class);
         register(new MessageKey(MessageType.event.name(), EventMessageType.location_select.name(), WechatAccountType.ENTERPRISE), EnterpriseLocationSelectEventMessage.class);
+        register(new MessageKey(MessageType.event.name(), EventMessageType.change_external_contact.name(), WechatAccountType.ENTERPRISE), EnterpriseExternalContactChangeMessage.class);
     }
 }

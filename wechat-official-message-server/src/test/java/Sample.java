@@ -41,7 +41,7 @@ public class Sample {
                     while (i < 1000000) {
                         String trim = String.valueOf(System.currentTimeMillis() / 1000);
                         String uid = UUID.randomUUID().toString().replaceAll("-", "");
-                        String sRespData = "<xml><ToUserName><![CDATA[wxef20891dffeb6d1d]]></ToUserName><FromUserName><![CDATA[czqiang]]></FromUserName><CreateTime>" + trim + "</CreateTime><MsgType><![CDATA[text]]></MsgType><Content><![CDATA[this is a test]]></Content><MsgId>" + System.currentTimeMillis() / 1000 + "</MsgId><AgentID>4</AgentID></xml>";
+                        String sRespData = "";
                         try {
                             String sEncryptMsg = wxcpt.EncryptMsg(sRespData, trim, uid);
                             MessageRequest request = new MessageRequest();

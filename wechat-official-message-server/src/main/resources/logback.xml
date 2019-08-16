@@ -5,9 +5,9 @@
     <property name="log.path" value="/data/applogs/xxl-job/xxl-job-executor-sample-springboot.log"/>
 
     <appender name="console" class="ch.qos.logback.core.ConsoleAppender">
-       <!-- <filter class="ch.qos.logback.classic.filter.ThresholdFilter" >
-            <level>WARN</level>
-        </filter>-->
+        <!-- <filter class="ch.qos.logback.classic.filter.ThresholdFilter" >
+             <level>WARN</level>
+         </filter>-->
         <encoder>
             <pattern>%d{HH:mm:ss.SSS} %contextName [%thread] %-5level %logger{36} - %msg%n</pattern>
         </encoder>
@@ -33,5 +33,14 @@
         <appender-ref ref="console"/>
         <appender-ref ref="file"/>
     </logger>-->
-
+<!--    <xml>-->
+<!--        <ToUserName><![CDATA[ww073f12387876d453]]></ToUserName>-->
+<!--        <FromUserName><![CDATA[sys]]></FromUserName>-->
+<!--        <CreateTime>1565937173</CreateTime>-->
+<!--        <MsgType><![CDATA[event]]></MsgType>-->
+<!--        <Event><![CDATA[change_external_contact]]></Event>-->
+<!--        <ChangeType><![CDATA[add_external_contact]]></ChangeType>-->
+<!--        <UserID><![CDATA[ChenZhiQiang]]></UserID>-->
+<!--        <ExternalUserID><![CDATA[wml2COCgAAiBFmYEHDTthrhCYJCQ9lVw]]></ExternalUserID>-->
+<!--    </xml>-->
 </configuration>

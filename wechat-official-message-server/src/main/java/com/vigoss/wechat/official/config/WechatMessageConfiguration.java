@@ -23,7 +23,8 @@ public class WechatMessageConfiguration {
         EpWechatAccount epWechatAccount1 = new EpWechatAccount("wxef20891dffeb6d1d", 4, "kFq8rkOodeefyMjGMqsch9wYLE00c", "Ktu0BqHlhdQlS9j376qWvqaPZ5oueGN244PvFWOxB0M");
         EpWechatAccount epWechatAccount2 = new EpWechatAccount("wx0f89f499557f6aae", 0, "vgshop", "Ymzlhj7GBrshwcpbgdf6YxdsAcRL31v3oR8PGJPgNiS");
         EpWechatAccount epWechatAccount3 = new EpWechatAccount("wx0f89f499557f6aae", 1000002, "ADCRy6qO", "Ymzlhj7GBrshwcpbgdf6YxdsAcRL31v3oR8PGJPgNiS");
-        EnterpriseMessageFactory enterpriseMessageFactory = new EnterpriseMessageFactory("com.vigoss", epWechatAccount, epWechatAccount1, epWechatAccount2, epWechatAccount3);
+        EpWechatAccount epWechatAccount4 = new EpWechatAccount("ww073f12387876d453", null, "eLJHOkk", "scbweSV2GcRApETEVHpqkLBGvSM5L0Bz4yKqC8BEIjq");
+        EnterpriseMessageFactory enterpriseMessageFactory = new EnterpriseMessageFactory("com.vigoss", epWechatAccount, epWechatAccount1, epWechatAccount2, epWechatAccount4);
         return new MessageDispatcher(messageFactory, enterpriseMessageFactory);
     }
 }

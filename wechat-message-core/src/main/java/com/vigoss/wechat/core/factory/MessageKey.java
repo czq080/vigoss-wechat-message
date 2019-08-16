@@ -20,6 +20,12 @@ public class MessageKey implements Serializable {
 
     private final WechatAccountType wechatAccountType;
 
+    public MessageKey(String msgType, WechatAccountType wechatAccountType) {
+        this.msgType = msgType;
+        this.eventType = null;
+        this.wechatAccountType = wechatAccountType;
+    }
+
     public MessageKey(String msgType, String eventType, WechatAccountType wechatAccountType) {
         this.msgType = msgType;
         this.eventType = eventType;

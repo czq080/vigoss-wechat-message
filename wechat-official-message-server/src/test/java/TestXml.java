@@ -28,7 +28,7 @@ public class TestXml {
         request.setSignature(null);
         request.setType(WechatAccountType.ENTERPRISE);
         request.setTimestamp("1531980246");
-        String xml = "<xml><ToUserName><![CDATA[wxef20891dffeb6d1d]]></ToUserName><FromUserName><![CDATA[czqiang]]></FromUserName><CreateTime>1531980246</CreateTime><MsgType><![CDATA[image]]></MsgType><PicUrl><![CDATA[http://p.qpic.cn/pic_wework/870434664/7d7b027138400def065a58924c653252e0e2757104d2caad/]]></PicUrl><MsgId>1522576300</MsgId><MediaId><![CDATA[1TY3CIcJUdu9qMnJ1e1oHuizEQDPt6u2mAKD0vMIWKxI6y_c0kWhev663s1Mhrjpz]]></MediaId><AgentID>4</AgentID></xml>";
+        String xml = "";
         request.setOriginalContent(xml);
         MessageRequest request2 = new MessageRequest();
         request2.setMsgSignature("e992d4fe8e198ec3c458c26bb48030f498530e42");
@@ -41,7 +41,7 @@ public class TestXml {
         request2.setType(WechatAccountType.ENTERPRISE);
         request2.setSignature(null);
         request2.setTimestamp("1531980246");
-        String xml1 = "<xml><ToUserName><![CDATA[wxef20891dffeb6d1d]]></ToUserName><FromUserName><![CDATA[czqiang]]></FromUserName><CreateTime>1531980246</CreateTime><MsgType><![CDATA[event]]></MsgType><AgentID>4</AgentID><Event><![CDATA[pic_weixin]]></Event><EventKey><![CDATA[企业微信发图器]]></EventKey><SendPicsInfo><Count>1</Count><PicList><item><PicMd5Sum><![CDATA[91c05229ce7afc1cfdc43c0b3c868385]]></PicMd5Sum></item></PicList></SendPicsInfo></xml>";
+        String xml1 = "";
         request2.setOriginalContent(xml1);
         CountDownLatch countDownLatch = new CountDownLatch(2);
         Thread xx = new Thread(new Runnable() {

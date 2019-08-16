@@ -2,6 +2,7 @@ package com.vigoss.wechat.enterprise.event.model;
 
 import com.vigoss.wechat.core.MessageConstant;
 import com.vigoss.wechat.core.event.model.AgentEventKeyMessage;
+import com.vigoss.wechat.core.event.model.EventKeyMessage;
 import com.vigoss.wechat.core.event.type.EventMessageType;
 
 import javax.xml.bind.annotation.XmlElement;
@@ -10,7 +11,7 @@ import javax.xml.bind.annotation.XmlElement;
  * @author chenzhiqiang
  * @date 2018/7/17
  */
-public class EnterpriseLocationEventMessage extends AgentEventKeyMessage {
+public class EnterpriseLocationEventMessage extends EventKeyMessage {
     private static final long serialVersionUID = -7407356547971203101L;
 
     public EnterpriseLocationEventMessage() {
